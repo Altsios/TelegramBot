@@ -59,7 +59,6 @@ def main():
             send_message(chat_id, text)
         else:
             continue
-        sleep(5)
 
 
 # точка входа
