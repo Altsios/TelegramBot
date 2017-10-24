@@ -1,7 +1,5 @@
 import requests
 import misc
-from time import sleep
-import json
 
 # https://api.telegram.org/
 # bot457007807:AAGwy_GFW-frl4-5hmJaaA1LycqSO9-Q_XA/
