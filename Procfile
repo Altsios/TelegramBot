@@ -1,1 +1,1 @@
-web: python UsTelepot.py
+worker: python UsTelepot.py
