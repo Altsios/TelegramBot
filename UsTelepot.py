@@ -1,3 +1,4 @@
+import os
 import telepot
 import sys
 import time
@@ -10,7 +11,7 @@ def handle(msg):  # обработка приходящих сообщений
         bot.sendMessage(chat_id, msg['text'])  # если текст, шлем его обратно(используем словарь)
 
 
-bot = telepot.Bot(sys.argv[1])  # токен вводим в командную строку
+bot = telepot.Bot(os.environ.get("TOKEN"))  # токен вводим в командную строку
 
 
 MessageLoop(bot, handle).run_as_thread()  # получаем сообщения, используя определенного бота+обрабатываем их
