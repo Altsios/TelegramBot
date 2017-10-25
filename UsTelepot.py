@@ -11,10 +11,10 @@ def handle(msg):  # обработка приходящих сообщений
         bot.sendMessage(chat_id, msg['text'])  # если текст, шлем его обратно(используем словарь)
 
 
-bot = telepot.Bot(os.environ.get("TOKEN"))  # токен вводим в командную строку
+bot = telepot.Bot(os.environ.get("TOKEN"))  # токен берем из переменной окружения
 
 
 MessageLoop(bot, handle).run_as_thread()  # получаем сообщения, используя определенного бота+обрабатываем их
 
 while 1:  # бесконечный цикл работы программы
-    time.sleep(1)  # присотановка скрипта на 10 с
+    time.sleep(1)  # присотановка скрипта на 1 с
