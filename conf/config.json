@@ -1,0 +1,10 @@
+{
+    "telegram_token": "457007807:AAGwy_GFW-frl4-5hmJaaA1LycqSO9-Q_XA",
+    "admin_id": 412365892,
+    "redis": {
+        "ip": "redis",
+        "port": 6379,
+        "db": 0
+    },
+    "cache_time": 10800
+}
