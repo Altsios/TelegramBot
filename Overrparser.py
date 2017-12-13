@@ -22,7 +22,7 @@ class Parser(HTMLParser):
     def handle_data(self, data):
         if len(self.result) == 0:
             return
-        if self.result[-1].get('name') == u'':# если еще не заполнили информацию
+        if self.result[-1].get('name') == u'':# теперь заполняем данные >данные<
             self.result[-1]['name'] = data
         elif self.result[-1].get('price') == u'':
             self.result[-1]['price'] = data

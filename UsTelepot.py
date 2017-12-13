@@ -184,7 +184,6 @@ class SteamBot(telepot.aio.Bot, telepot.helper.AnswererMixin):
         news_items = await self.get_news(appid)
         # скармливаем парсеру содержимое
         for item in news_items:
-            print(item['contents'])
             msg = NEWS_TEMPLATE.format(
                 title=item['title'],
                 url=item['url'],
@@ -204,7 +203,6 @@ class SteamBot(telepot.aio.Bot, telepot.helper.AnswererMixin):
             count
         )
         content = await self.get_content_from_url(url, resp_format='json')
-        print(content)
         return content['appnews']['newsitems'] if content else {}
 
     @staticmethod
